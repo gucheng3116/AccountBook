@@ -82,7 +82,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     protected void onResume() {
         super.onResume();
         setUserInfo();
-        queryUnReadMsg();
+//        queryUnReadMsg();
     }
 
     @Override

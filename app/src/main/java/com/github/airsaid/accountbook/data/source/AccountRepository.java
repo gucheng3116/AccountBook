@@ -167,10 +167,11 @@ public class AccountRepository implements AccountDataSource {
         });
     }
 
+
     @Override
     public void queryCountAccounts(final User user, final String startDate, final String endDate
             , final int queryType, final int type, final QueryAccountsCallback callback) {
-        if(queryType == 1){// 查询指定用户指定日期内所有账目信息
+       /* if(queryType == 1){// 查询指定用户指定日期内所有账目信息
             queryAccounts(user, startDate, endDate, type, -1, callback);
         }else if(queryType == 2){// 查询指定用户的当前帐薄内所有账目信息
             queryDefBookAccounts(user, startDate, endDate, type, -1, false, new QueryAccountListCallback(){
@@ -204,7 +205,7 @@ public class AccountRepository implements AccountDataSource {
                     callback.queryFail(e);
                 }
             });
-        }
+        }*/
     }
 
     @Override

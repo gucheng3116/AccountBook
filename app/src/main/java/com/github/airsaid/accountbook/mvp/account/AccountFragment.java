@@ -227,6 +227,7 @@ public class AccountFragment extends BaseFragment implements AccountContract.Vie
      * @param position 选中的位置
      */
     private void setAccountType(int position) {
+
         Type type = mTypeAdapter.getData().get(position);
         Drawable image = UiUtils.getDrawable(UiUtils.getImageResIdByName(type.getIcon()));
         UiUtils.setCompoundDrawables(mTxtType, image, null, null, null);

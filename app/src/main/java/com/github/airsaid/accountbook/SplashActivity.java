@@ -52,21 +52,21 @@ public class SplashActivity extends BaseActivity {
             public void run() {
                 Intent intent = new Intent();
                 // 判断用户是否更新了应用和登录
-                if (!isUpdateApp() && UserUtils.checkLogin()) {
-                    User user = UserUtils.getUser();
-                    boolean phoneVerified = user.isMobilePhoneVerified();
+                //if (!isUpdateApp() && UserUtils.checkLogin()) {
+                   // User user = UserUtils.getUser();
+                    //boolean phoneVerified = user.isMobilePhoneVerified();
                     // 进入首页
-                    if(phoneVerified){
+                    //if(phoneVerified){
                         // 进入首页
                         intent.setClass(mContext, MainActivity.class);
-                    }else{
+                    //}else{
                         // 进入登录页
-                        intent.setClass(mContext, LoginActivity.class);
-                    }
-                } else {
+                      //  intent.setClass(mContext, LoginActivity.class);
+                    //}
+               /* } else {
                     // 进入登录页
                     intent.setClass(mContext, LoginActivity.class);
-                }
+                }*/
                 startActivity(intent);
                 finish();
             }
